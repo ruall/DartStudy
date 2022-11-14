@@ -24,7 +24,7 @@ class Animal {
 }
 
 class Dog {
-  String? name;
+  String name;
 
   Dog(String name) {
     this.name = name;
@@ -40,7 +40,7 @@ class Dog {
 }
 
 class A1 {
-  static String name = 'A1';
+  static String name = 'A1'; // 静态属性
   int age = 20;
   static void main() {
     print(name);
@@ -54,22 +54,23 @@ class A1 {
 }
 
 void main() {
-  var person = Person('张三', 20);
-  print(person.getName);
-  person.setName = '李四';
+  var person = Person('张三', 30);
   print(person.getName);
   print(person.getAge);
-  person.setAge = 30;
-  print(person.getAge);
-
-  var animal = Animal();
-
-  var dog = Dog('小狗');
-  dog.printName();
-  var dog1 = Dog.named();
-
-  print(A1.name);
-  A1.main();
-  var a1 = new A1();
-  a1.printName();
+  // person.setName = '李四';
+  // print(person.getName);
+  // print(person.getAge);
+  // person.setAge = 30;
+  // print(person.getAge);
+  //
+  // var animal = Animal();
+  //
+  // var dog = Dog('小狗');
+  // dog.printName();
+  // var dog1 = Dog.named();
+  //
+  // print(A1.name);
+  // A1.main();
+  // var a1 = new A1();
+  // a1.printName();
 }
